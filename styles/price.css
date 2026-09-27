@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+#back-btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: rgb(0, 102, 255);
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#back-btn:hover {
+  background-color: rgb(0, 82, 204);
+}
+
+.main-info {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin-inline: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 4px solid;
+}
+
+#fare-header {
+  color: #333;
+  margin-top: 0;
+  text-align: center;
+}
+
+#route-summary {
+  color: grey;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+#map {
+  height: 320px;
+  width: 480px;
+  max-width: 100%;
+  margin-inline: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: #e5e3df;
+}
+
+.fare-list {
+  margin-top: 20px;
+  width: 480px;
+  max-width: 100%;
+}
+
+.fare-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+.fare-item:last-child {
+  border-bottom: none;
+}
+
+.fare-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.fare-name {
+  color: #333;
+}
+
+.fare-note {
+  font-size: 12px;
+  color: grey;
+  margin-top: 2px;
+}
+
+.fare-value {
+  font-weight: bold;
+  color: #0066ff;
+  text-align: right;
+}
+
+.fare-value.fare-muted {
+  color: grey;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13px;
+}
+
+#export-stations-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+#export-stations-btn:hover {
+  background-color: #0052cc;
+}

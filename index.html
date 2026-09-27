@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakbay</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <div class="header-container">
+    <h1 id="main-heading">Lakbay</h1>
+    <a href="pages/help.html" id="help">Info</a>
+  </div>
+
+  <p id="search">Search for locations or specific stores within Metro Manila.</p>
+
+  <div class="search-panel">
+    <input type="text" id="start-search" placeholder="Search Start Location (e.g. Manila)" />
+    <button id="search-start-btn">Set Start</button>
+    <input type="text" id="end-search" placeholder="Search Destination (e.g. Makati)" />
+    <button id="search-end-btn">Set Destination</button>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="info-panel">
+    <a href="pages/price.html" id="confirm">Confirm</a>
+  </div>
+  <p id="confirm-error"></p>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

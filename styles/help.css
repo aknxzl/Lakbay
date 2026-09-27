@@ -1,0 +1,28 @@
+#back-btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #0066ff;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#back-btn:hover {
+  background-color: #0052cc;
+}
+
+#line{
+    border: none;          
+    height: 2px;          
+    background-color: #000000; 
+    width: 100%;  
+}
+
+#tutorial {
+  color: #333;
+  margin-top: 0;
+  text-align: left;
+}

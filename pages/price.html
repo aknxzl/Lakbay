@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lakbay - Fare Estimate</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../styles/price.css" />
+</head>
+<body>
+    <a href="../index.html" id="back-btn"> Back to homepage </a>
+
+    <div class="main-info">
+        <h1 id="fare-header">Fare Estimate</h1>
+        <p id="route-summary">Loading route...</p>
+
+        <div id="map"></div>
+
+        <div class="fare-list">
+            <div class="fare-item" id="Trad-jeepney">
+                <span class="fare-name">Traditional Jeepney</span>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="Modern-jeepney">
+                <span class="fare-name">Modern Jeepney / PUV</span>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="City-bus">
+                <span class="fare-name">City Bus (Ordinary)</span>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="Tricycle">
+                <span class="fare-name">Tricycle (Shared)</span>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="Taxi">
+                <span class="fare-name">Taxi</span>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="MRT-3">
+                <div class="fare-info">
+                    <span class="fare-name">MRT-3</span>
+                    <span class="fare-note"></span>
+                </div>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="LRT-1">
+                <div class="fare-info">
+                    <span class="fare-name">LRT-1</span>
+                    <span class="fare-note"></span>
+                </div>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="LRT-2">
+                <div class="fare-info">
+                    <span class="fare-name">LRT-2</span>
+                    <span class="fare-note"></span>
+                </div>
+                <span class="fare-value">–</span>
+            </div>
+            <div class="fare-item" id="BRT">
+                <div class="fare-info">
+                    <span class="fare-name">EDSA Busway (BRT)</span>
+                    <span class="fare-note"></span>
+                </div>
+                <span class="fare-value">–</span>
+            </div>
+        </div>
+
+        <button type="button" id="export-stations-btn" style="display: none;">
+            Copy station coordinates (for developer)
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../scripts/stations.js"></script>
+    <script src="../scripts/price.js"></script>
+</body>
+</html>
